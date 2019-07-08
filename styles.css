@@ -232,6 +232,7 @@ a{
 
 .col-1{
   padding: 1rem 2rem;
+  padding-right: 0
 }
 
 .business-tools-promo {
@@ -303,6 +304,10 @@ a{
   transition: all .1s;
 }
 
+.col-1 h3, .col-2 h3:last-of-type{
+  border: none;
+} 
+
 .col-2 h3:first-of-type {
   border-top: 1px solid #ddd;
 }
@@ -371,7 +376,7 @@ a{
 }
 
 .col-3 .latest-news-card .news-img-box{
-  flex: 5;
+  flex-basis: 13.5rem;
   margin-right: 1.5rem;
 }
 
@@ -468,7 +473,7 @@ a{
   font-family: Roboto-Bold;
 }
 
-.col-3 .newsletter .title, .col-2 .in-magazine .title  {
+.col-3 .newsletter .title, .in-magazine .title  {
   color: var(--color-grey-dark-1);
   text-transform: uppercase;
   font-size: 1.9rem;
@@ -477,10 +482,18 @@ a{
   margin: 0;
 }
 
-.col-3 .newsletter .logo, .col-2 .in-magazine .logo {
+.col-3 .newsletter .logo, .in-magazine .logo {
   width: 3rem;
   background-color: var(--color-red);
   margin-right: 1rem;
+}
+
+
+.col-2 .section-heading{
+  border-bottom: 1px solid #ddd;
+  margin-top: 1.4rem;
+  padding-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 .col-2 .story-card {
@@ -523,15 +536,24 @@ a{
   margin-right: 1.3rem;
 }
 
-.col-2 .in-magazine {
-  margin-top: 2rem;
+
+.in-magazine {
+  margin-top: 1rem;
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
   align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+  padding-left: 32%;
+}
+
+.in-magazine-row{
+  padding-left: 2.6rem;
+  padding-right: 1.4rem;
 }
 
 .col-1, .col-2, .col-3 {
-  padding: 0;
+  padding-top: 1rem;
 }
 
 .col-1 {
@@ -540,10 +562,11 @@ a{
 
 .col-3 {
   padding-right: 3rem;
+  padding-left: 0;
 }
 
 .col-2 {
-  padding: 2rem 3.3rem 0;
+  padding: 1rem 3.3rem 0;
 }
 
 .news-headlines {
@@ -564,7 +587,7 @@ a{
 
 .article-card .article-card-img {
   width: 100%;
-  height: 29rem;
+  height: 21vw;
   object-fit: cover;
 }
 
@@ -584,15 +607,32 @@ a{
   margin-right: .8rem;
   color: white;
   padding: 0 .7rem;
+  font-family: Roboto-Regular;
 }
 
 .article-card .unselected-section {
   color: var(--color-red);
   cursor: pointer;
+  font-family: Roboto-Bold;
+
+}
+
+
+.article-card.article-card-1 {
+  position: relative;
+  top: -2.2vw;
+}
+
+.article-card.article-card-1 a{
+  position: relative;
 }
 
 .article-card.article-card-1 .article-card-img{
   height: 100%;
+}
+
+.article-cards-row-2{
+  margin-top: -1rem;
 }
 
 .article-card.article-card-1 .article-card-title a{
@@ -611,7 +651,8 @@ a{
 
 .article-card.article-card-1 .text-overlay {
   position: absolute;
-  top: 25.5rem;
+  bottom: 0;
+  left: 0;
   padding: 0.5rem 1rem;
   background-color: rgba(255,255,255, 0.9);
   display: inline-block;
@@ -636,7 +677,7 @@ a{
 }
 
 .article-cards {
-  border-top: 1px solid #ccc;
+  /* border-top: 1px solid #ccc; */
   padding-top: 1.6rem;
 }
 
@@ -655,32 +696,58 @@ a{
   text-decoration: underline var(--color-red);
 }
 
+.article-card.article-card-8 a{
+  position: relative;
+}
+
 .article-card.article-card-8 .img-caption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
   background-color: var(--color-red);
-  margin-right: .8rem;
   color: white;
   padding: 0 .7rem;
   display: inline-block;
   text-transform: uppercase;
   position: absolute;
-  top: 26.5rem;
 }
 
 
+@media screen and (max-width: 1080px){
+  .article-card {
+    padding-bottom: 2.5rem;
+  }
 
+}
 
 @media screen and (max-width: 1000px){
   .col-3, .col-1 {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
   }
 
   .col-1 {
     padding-right: 1.4rem !important;
   }
   .col-2 {
-    padding-right: 2rem;
+    padding-right: 1.5rem;
     padding-left: 1.4rem;
+  }
+
+}
+
+@media screen and (max-width: 992px){
+  .article-card {
+    padding-bottom: 2.5rem;
+  }
+
+  .in-magazine {
+    padding-left: 52.7%
+  }
+
+  .col-3 .latest-news-card .news-img-box{
+    flex: 0;
+    flex-basis: 13.5rem;
   }
 
 }
@@ -689,6 +756,42 @@ a{
   .col-3, .col-1, .col-2 {
     padding-left: 1.5rem !important;
     padding-right: 1.5rem !important;
+  }
+  .col-3 .latest-news-card .news-img-box {
+    flex: 0;
+    flex-basis: 25.8rem;
+  }
+
+  .article-cards, .article-cards-row-2 {
+    background-color: white;
+  }
+  .article-card .article-card-img{
+    height: 62.5vw;
+  }
+
+  .article-card .article-card-title a{
+    font-size: 1.6rem;
+    margin-bottom: 0;
+  }
+
+  .article-card.article-card-1{
+    padding-bottom: 0;
+  }
+
+  .in-magazine-standalone {
+    display: none;
+  }
+
+  .newsletter {
+    margin-bottom: .4rem !important;
+  }
+
+  .in-magazine-article-card {
+    display: flex;
+    border-bottom: none;
+    justify-content: center;
+    padding: 0;
+    margin-top: 2.8rem;
   }
 
 }

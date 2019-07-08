@@ -474,6 +474,7 @@ a{
   font-size: 1.9rem;
   font-family: Roboto-Bold;
   width: 15.4rem;
+  margin: 0;
 }
 
 .col-3 .newsletter .logo, .col-2 .in-magazine .logo {
@@ -544,6 +545,129 @@ a{
 .col-2 {
   padding: 2rem 3.3rem 0;
 }
+
+.news-headlines {
+  margin-bottom: .9rem;
+}
+
+/* ARTICLE CARD */
+
+.article-card {
+  /* border: 1px solid black; */
+
+}
+
+.article-card a {
+  display: block;
+  width: 100%;
+}
+
+.article-card .article-card-img {
+  width: 100%;
+  height: 29rem;
+  object-fit: cover;
+}
+
+.article-card  .article-card-sections {
+  display: flex;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-top: 1rem; 
+  font-weight: bold;
+  letter-spacing: .3px;
+  /* font-family: Roboto-Bold; */
+}
+
+.article-card .selected-section{
+  
+  background-color: var(--color-red);
+  margin-right: .8rem;
+  color: white;
+  padding: 0 .7rem;
+}
+
+.article-card .unselected-section {
+  color: var(--color-red);
+  cursor: pointer;
+}
+
+.article-card.article-card-1 .article-card-img{
+  height: 100%;
+}
+
+.article-card.article-card-1 .article-card-title a{
+  font-size: 1.8rem ;
+  background-color: #f4f5f6;
+  padding: 1.1rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+.article-card.article-card-1 .article-card-title a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.article-card.article-card-1 .text-overlay {
+  position: absolute;
+  top: 25.5rem;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255,255,255, 0.9);
+  display: inline-block;
+  text-transform: uppercase;
+  color: var(--color-red);
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Roboto-Bold;
+  font-size: 1.6rem;
+}
+
+.article-card.article-card-1 .article-card-title a:hover {
+  background-color: #dbdcdd;
+  text-decoration: none;
+} 
+
+.article-card.article-card-1 .right-chevron {
+  width: .8rem;
+  margin-left: .8rem;
+  position: relative;
+  top: .1rem;
+}
+
+.article-cards {
+  border-top: 1px solid #ccc;
+  padding-top: 1.6rem;
+}
+
+
+
+.article-card .article-card-title a{
+  color: var(--color-black);
+  font-weight: bold;
+  font-family: Roboto-Bold;
+  font-size: 2rem;
+  line-height: 1.1;
+  margin: 1rem 0;
+}
+
+.article-card .article-card-title a:hover {
+  text-decoration: underline var(--color-red);
+}
+
+.article-card.article-card-8 .img-caption{
+  background-color: var(--color-red);
+  margin-right: .8rem;
+  color: white;
+  padding: 0 .7rem;
+  display: inline-block;
+  text-transform: uppercase;
+  position: absolute;
+  top: 26.5rem;
+}
+
+
+
 
 @media screen and (max-width: 1000px){
   .col-3, .col-1 {

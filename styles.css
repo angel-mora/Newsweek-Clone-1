@@ -901,6 +901,10 @@ a{
   padding: 0 1.5rem;
 }
 
+.row.section-top-news.us{
+  padding-bottom: 3rem;
+}
+
 .section-top-news .section-title{
   width: 100%;
 }

@@ -61,6 +61,10 @@ a{
   background-color: white;
 }
 
+.container-fluid {
+  background-color: white;
+}
+
 
 .header-banner{
   background-color: var(--color-red);
@@ -371,7 +375,7 @@ a{
   margin-top: .2rem;
 }
 
-.col-3 .latest-news-card {
+.col-3 .latest-news-card, .section-top-news {
   display: flex;
 }
 
@@ -811,7 +815,154 @@ a{
 }
 
 
+.slideshows-heading {
+  padding-bottom: 1.2rem;
+}
 
+.slideshows-heading .logo {
+  position: relative;
+}
+
+.slideshows-heading .logo::after {
+  border-bottom: 3px solid red;
+  border-right: 3px solid red;
+  display: block;
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 0.3rem;
+  left: 0.4rem;
+}
+
+.slideshow a:first-of-type{
+  display: block;
+  position: relative;
+}
+
+.slideshow img{
+  width: 100%;
+}
+
+
+.slideshow .slideshow-no{
+  position: absolute;
+  bottom: 0;
+  background-image: url(https://g.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 7rem;
+  height: 5.2rem;
+  font-size: 2rem;
+  color: var(--color-red);
+  font-family: Roboto-Bold;
+  text-align: center;
+  text-indent: 1rem;
+  line-height: 6.4rem;
+}
+
+.row.slideshows-section, .row.slideshows-row {
+  background-color: white;
+}
+
+.row.slideshows-row{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.row.slideshows-section{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.slideshow {
+  padding-bottom: 3.5rem;
+}
+
+.slideshow h5 {
+  margin-top: 2rem;
+}
+
+.slideshow h5 a, .section-top-news h5 a{
+  color: var(--color-black);
+  font-weight: bold;
+  font-family: Roboto-Bold;
+  font-size: 2.2rem;
+  line-height: 1;
+  margin: 1rem 0;
+}
+
+.slideshow h5 a:hover, .section-top-news h5 a:hover{
+  text-decoration: underline var(--color-red);
+}
+
+.row.section-top-news {
+  padding: 0 1.5rem;
+}
+
+.section-top-news .section-title{
+  width: 100%;
+}
+
+.section-top-news .section-title {
+  padding: 1.7rem 0 .5rem;
+  margin: 0 1.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.section-top-news .section-title a{
+  color: var(--color-red);
+  font-size: 2.2rem;
+  font-family: Roboto-Bold;
+}
+
+.section-top-news .section-title a:hover {
+  text-decoration: none;
+}
+
+.section-top-news .latest-news-card{
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+}
+
+.section-top-news .latest-news-card:last-of-type{
+  border: none;
+}
+
+.section-top-news .latest-news-card:first-of-type{
+  padding-top: 0;
+}
+
+.section-top-news .latest-news-card .news-title {
+  line-height: 1.3;
+  margin-left: 1.5rem;
+}
+
+.section-top-news .latest-news-card .news-title a{
+  color: var(--color-black);
+  font-size: 1.7rem;
+  font-family: Roboto-Bold;
+}
+
+.section-top-news .latest-news-card .news-title a:hover{
+  color: var(--color-red);
+  text-decoration: none;
+}
+
+.section-top-news .tile-img {
+  display: block;
+}
+
+.section-top-news .tile-img img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.section-top-news h5{
+  margin-top: 1rem;
+}
 
 
 
@@ -854,9 +1005,11 @@ a{
 
   .in-magazine-row{
     padding-left: 30%;
+    padding-right: 1.5rem;
   }
   .row.article-cards, .article-cards-row-2{
-    padding: 0 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .in-magazine-standalone{
@@ -875,6 +1028,20 @@ a{
 
   .editors-pick section img {
     height: 30.8vw;
+  }
+
+  .row.slideshows-section{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .row.slideshows-row{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .row.section-top-news{
+    padding: 0;
   }
 
 }
@@ -949,6 +1116,27 @@ a{
 
   .editors-pick section img {
     height: 62.8vw;
+  }
+
+  .slideshow h5 a{
+    font-size: 1.8rem;
+  }
+
+ 
+
+  .section-top-news .section-title {
+    width: 100%;
+  }
+
+  .section-top-news h5{
+    margin-bottom: 2.2rem;
+  }
+  .section-top-news h5 a{
+    font-size: 1.8rem;
+  }
+
+  .section-top-news .news-img{
+    width: 25.8rem;
   }
 }
 

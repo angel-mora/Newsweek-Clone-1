@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400&display=swap');
+
 @font-face {
   font-family: 'PlayFair-Regular';
   src: url('./fonts/playfairdisplay-regular.woff2') format('woff2');
@@ -18,6 +20,7 @@
   src: url('./fonts/Genericons.woff') format('woff');
 }
 
+
 :root{
   --color-red: #f72210;
   --color-black: #000;
@@ -34,6 +37,8 @@
 
 html {
   font-size: 62.5% ;
+  height: 3000vh;
+  background-color: antiquewhite;
 }
 
 body{
@@ -968,7 +973,98 @@ a{
   margin-top: 1rem;
 }
 
+.subscribe-heading-text, .newletter-heading-text{
+  color: var(--color-red);
+  font-family: Roboto-Bold;
+  font-size: 1.6rem;
+  margin-bottom: .6rem;
+}
 
+
+.subscribe-box{
+  background-color: rgb(244,245,246);
+  display: flex; 
+  align-items: center;
+  padding: 3rem 3rem 4.5rem;
+}
+
+.img-box {
+  margin-right: 3rem;
+}
+
+.subscribe-btn, .newsletter-btn {
+  background-color: var(--color-red);
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: .2px;
+    border: none;
+    padding: 0.5rem 1.3rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.subscribe-btn:focus, .newsletter-btn:focus{
+  outline: none;
+}
+
+.subscribe-btn .right-chevron, .newsletter-btn .right-chevron {
+  width: 1.8rem;
+  padding-left: 1rem;
+  fill: white;
+}
+
+.subscribe-text {
+  padding-left: 9.2rem;
+}
+
+.subscribe-text h5, .newsletter-text h5{
+  color: #111;
+  font-size: 2.3rem;
+  font-family: Roboto-Bold;
+  margin: 0;
+}
+
+.subscribe-text p, .newsletter-text p {
+  color: #777;
+  font-family: Lato;
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  line-height: 1.4;
+}
+
+.subscribe-box .img-box {
+  position: relative;
+}
+
+.row.subscribe {
+  padding: 3.4rem 1.5rem 4rem;
+  border-top: 2px solid #f3f2f2;
+}
+
+.subscribe-box .img-box .img-2{
+  position: absolute;
+  top: 6%;
+  left: 48%;
+} 
+
+.newsletter-box{
+  border: 1px solid rgb(236, 233, 233);
+  display: flex;
+  height: 90.4%;
+}
+
+.newsletter-text{
+  padding: 3.4rem 3rem 0;
+}
+
+.newsletter-box .img {
+  height: 100%;
+  width: 81.6rem;
+  background: url("https://g.newsweek.com/themes/newsweek/images/subscribe-img2.gif") center center / cover no-repeat;
+}
 
 @media screen and (max-width: 1080px){
   .article-card {
@@ -1048,6 +1144,25 @@ a{
     padding: 0;
   }
 
+  .row.subscribe {
+    padding: 3.4rem 0 4rem;
+  }
+
+  .newsletter-box{
+    height: 19.1rem;
+  }
+
+  .newsletter-box .img{
+    width: 19.1rem;
+  }
+
+  .newsletter-text {
+    padding-top: 2.1rem;
+  }
+
+  .row.newslestter-heading{
+    padding-top: 4rem;
+  }
 }
 
 @media screen and (max-width: 768px){
@@ -1142,6 +1257,53 @@ a{
   .section-top-news .news-img{
     width: 25.8rem;
   }
+
+  .subscribe-box {
+    flex-direction: column;
+    padding: 2.4rem 3rem;
+  }
+
+  .subscribe-text{
+    text-align: center;
+    padding-top: 3rem;
+    padding-left: 0;
+  }
+
+  .subscribe-text h5 {
+    font-size: 1.9rem;
+  }
+
+  .subscribe-text button{
+    display: inline-block;
+  }
+
+  .subscribe-box .img-box{
+    left: -4.1%;
+  }
+
+  .newsletter-box{
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  .newsletter-box .img{
+    width:  100%;
+    height: 16rem;
+  }
+
+  .newsletter-text{
+    text-align: center;
+  }
+
+  .newsletter-text h5{
+    font-size: 1.9rem;
+  }
+
+  .newsletter-text button {
+    display: inline-block
+  }
+
 }
 
 

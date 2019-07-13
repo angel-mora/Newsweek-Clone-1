@@ -221,11 +221,47 @@ a{
   right: 0;
 }
 
+.second-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-red);
+  padding: 1.5rem 1.5rem;
+  padding-right: 2.1rem;
+}
 
-/* 
-[class^="col"] {
-  border: 1px solid purple;
-} */
+.second-nav .logo-box{
+  line-height: 1;
+}
+
+.second-nav .second-nav-logo{
+  fill: white;
+  width: 13.5rem;
+}
+
+.burger-menu-icon{
+  width: 3rem;
+  height: .4rem;
+  background-color: #fb9a94;
+  position: relative;
+}
+
+.burger-menu-icon::after, .burger-menu-icon::before{
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: inherit;
+}
+
+.burger-menu-icon::after{
+  top: .8rem;
+}
+
+.burger-menu-icon::before{
+  bottom: .8rem;
+}
 
 
 .section-heading {

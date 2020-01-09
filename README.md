@@ -1,18 +1,18 @@
 # Newsweek-Clone
-It's a clone of Newsweek website
+It's a clone of Newsweek website.
+
+### Features
++ Exact Clone of Newsweek 
++ Fully Responsive like the original
 
 ##### Built With
 + HTML5
 + CSS3
-+ Bootstrap (for grid)
-
-# Cloned Page URL
-
-URL: [Newsweek](https://www.newsweek.com/)
-
-# Authors
-+ Saintaze [https://github.com/saintaze/](https://github.com/saintaze/)
++ Bootstrap (for grid only)
 
 # Live Version
 
-URL: 
+URL: [Newsweek](https://saintaze.github.io/Newsweek-Clone/)
+
+# Author
++ Saintaze [https://github.com/saintaze/](https://github.com/saintaze/)

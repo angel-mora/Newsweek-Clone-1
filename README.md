@@ -15,4 +15,4 @@ It's a clone of Newsweek website.
 URL: [Newsweek](https://saintaze.github.io/Newsweek-Clone/)
 
 # Author
-Saintaze [https://github.com/saintaze/](https://github.com/saintaze/)
+Saintaze [@saintaze](https://github.com/saintaze/)
